@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title>Widget Demo Page</title>
+
+</head>
+
+<body>
+
+<h1>Gameolith Widget Demos</h1>
+
+<p>
+	<a href="http://www.gameolith.com/try/beep/" class="gameolith-demo" data-widget="button" data-game="beep">Try BEEP for GNU/Linux</a>
+</p>
+
+<p>
+	<a href="http://www.gameolith.com/try/spacechem/" class="gameolith-demo" data-widget="box" data-game="spacechem">Try SpaceChem for GNU/Linux</a>
+</p>
+
+<script>
+(function(d, c, id) {
+	var h=d.getElementsByTagName(c)[0], s=d.createElement(c);
+	if (!d.getElementById(id)) {
+		s.async=true;
+		s.id=id;
+		s.src="../dist/widgets.min.js";
+		h.parentNode.insertBefore(s, h);
+	}
+})(document, "script", "gameolith-js");
+</script>
+
+</body>
+
+</html>
