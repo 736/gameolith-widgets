@@ -41,17 +41,7 @@ demo_widget_update = ->
 
     0
 
-$("#demo_widget input[type='text']").change ->
-    $(this).data 'dirty', true
-    0
-
-$("#demo_widget input[type='text']").blur ->
-    if $(this).data 'dirty' == true
-        $(this).data 'dirty', false
-        demo_widget_update
-    
-    0
-
+$("#demo_widget input[type='text']").blur demo_widget_update
 $("#demo_async").click demo_widget_update
 $("#demo_widget input[type='radio']").click demo_widget_update
 

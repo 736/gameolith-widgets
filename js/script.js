@@ -38,18 +38,7 @@
     return 0;
   };
 
-  $("#demo_widget input[type='text']").change(function() {
-    $(this).data('dirty', true);
-    return 0;
-  });
-
-  $("#demo_widget input[type='text']").blur(function() {
-    if ($(this).data('dirty' === true)) {
-      $(this).data('dirty', false);
-      demo_widget_update;
-    }
-    return 0;
-  });
+  $("#demo_widget input[type='text']").blur(demo_widget_update);
 
   $("#demo_async").click(demo_widget_update);
 
