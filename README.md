@@ -3,6 +3,8 @@ Gameolith Widgets
 
 You can embed and link to game demos and individual games on Gameolith using this lightweight script. It's completely open source, and licenced under Apache 2.0.
 
+For a nice way to generate widget code, take a look at our brand spanking new website! http://736.github.com/gameolith-widgets/
+
 Browser Support
 ---------------
 
