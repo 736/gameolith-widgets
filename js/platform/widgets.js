@@ -388,7 +388,7 @@ Gameolith.init = function() {
     button.setAttribute("data-gameolith-object-id", "__gameolith_button_" + num);
     button.style.display = "none";
   }
-  Gameolith.tools.cssloader("http://736.github.com/gameolith-widgets/js/platform/style.min.css");
+  Gameolith.tools.cssloader("http://736.github.com/gameolith-widgets/css/platform/style.min.css");
   window.addEventListener("message", Gameolith.messageRead, false);
   return demo_boxes.length + demo_buttons.length;
 };
