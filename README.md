@@ -24,7 +24,7 @@ Include the widget JavaScript asynchronously, using the following snippet:
 	if (!d.getElementById(id)) {
 		s.async=true;
 		s.id=id;
-		s.src="/dist/widgets.min.js";
+		s.src="http://736.github.com/gameolith-widgets/js/platform/widgets.min.js";
 		h.parentNode.insertBefore(s, h);
 	}
 })(document, "script", "gameolith-js");
@@ -34,7 +34,7 @@ Include the widget JavaScript asynchronously, using the following snippet:
 Or by including it at the bottom of your page:
 
 ``` html
-<script src="/dist/widgets.min.js" id="gameolith-js"></script>
+<script src="http://736.github.com/gameolith-widgets/js/platform/widgets.min.js" id="gameolith-js"></script>
 ```
 
 Demo download button
