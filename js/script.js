@@ -44,4 +44,6 @@
 
   $("#demo_widget input[type='radio']").click(demo_widget_update);
 
+  $(window).load(demo_widget_update);
+
 }).call(this);

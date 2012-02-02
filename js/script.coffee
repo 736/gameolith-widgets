@@ -1,6 +1,6 @@
 $ = jQuery
 
-script_location = "js/platform/widgets.min.js"
+script_location = "http://736.github.com/gameolith-widgets/js/platform/widgets.min.js"
 
 async_snippet = """<script>(function(a,b,c){var d=a.getElementsByTagName(b)[0],e=a.createElement(b);if(!a.getElementById(c)){e.async=true;e.id=c;e.src="#{script_location}";d.parentNode.insertBefore(e,d)}})(document,"script","gameolith-js");</script>"""
 
@@ -44,3 +44,5 @@ demo_widget_update = ->
 $("#demo_widget input").blur demo_widget_update
 $("#demo_async").click demo_widget_update
 $("#demo_widget input[type='radio']").click demo_widget_update
+
+$(window).load demo_widget_update
