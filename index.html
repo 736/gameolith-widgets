@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Gameolith Widget Collection &mdash; Put a splash of Linux gaming on your site</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.responsive.css" rel="stylesheet">
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+      #demo_preview {
+      	text-align: center;
+      }
+      .darken {
+      	background: #333333;
+      	box-shadow: rgba(255, 255, 255, 0.05) 0 1px 1px 0 inset;
+      	-moz-box-shadow: rgba(255, 255, 255, 0.05) 0 1px 1px 0 inset;
+      	-webkit-box-shadow: rgba(255, 255, 255, 0.05) 0 1px 1px 0 inset;
+      	-o-box-shadow: rgba(255, 255, 255, 0.05) 0 1px 1px 0 inset;
+
+      }
+    </style>
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    <script>
+	(function(d, c, id) {
+	    var h=d.getElementsByTagName(c)[0], s=d.createElement(c);
+	    if (!d.getElementById(id)) {
+	        s.async=true;
+	        s.id=id;
+	        s.src="js/platform/widgets.min.js";
+	        h.parentNode.insertBefore(s, h);
+	    }
+	})(document, "script", "gameolith-js");
+	</script>
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="#"><img src="img/gameolith-widgets.png" alt="Gameolith Widgets"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="hero-unit">
+        <h1>A little bit of Gameolith on your website.</h1>
+      </div>
+
+      <section class="demo-buttons">
+      	<div class="page-header">
+      		<h1>Demo download widgets <small>The fastest and easiest way to link to Linux game demos.</small></h1>
+      	</div>
+      	<div class="row">
+      		<div class="span4">
+      			<form method="" action="#" class="form-horizontal" id="demo_widget">
+      			<fieldset>
+      				<div class="control-group">
+      				<label for="demo_game">Game</label>
+      				<div class="controls">
+      					<input type="text" class="span2" id="demo_game" name="demo_game" value="beep">
+      				</div>
+      				</div>
+      				<div class="control-group">
+      				<label>Widget type</label>
+      				<div class="controls">
+      					<label class="radio">
+      						<input type="radio" checked name="demo_widget-type" value="button">
+      						Button
+      					</label>
+      					<label class="radio">
+      						<input type="radio" name="demo_widget-type" value="box">
+      						Box
+      					</label>
+      				</div>
+      				</div>
+      				<div class="control-group">
+      				<label for="demo_button-text">Button label</label>
+      				<div class="controls">
+      					<input type="text" class="span2" id="demo_button-text" name="demo_button-text" value="Try BEEP for GNU/Linux">
+      				</div>
+      				</div>
+      				<div class="control-group">
+      				<label for="demo_async">Async</label>
+      				<div class="controls">
+      					<input type="checkbox" id="demo_async" name="demo_async" checked>
+      				</div>
+      				</div>
+      			</fieldset>
+      			</form>
+      		</div>
+      		<div class="span8">
+      			<h3>Copy and paste the following code</h3>
+      			<textarea class="span8" id="demo_code"></textarea>
+
+      			<h3>Preview</h3>
+      			<div class="well" id="demo_preview">
+      				<a href="http://www.gameolith.com/game/beep/" class="gameolith-demo" data-widget="button" data-game="beep">Try BEEP for GNU/Linux</a>
+      			</div>
+      		</div>
+      	</div>
+      </section>
+    </div> <!-- /container -->
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
