@@ -3,7 +3,7 @@
 
   $ = jQuery;
 
-  script_location = "http://736.github.com/gameolith-widgets/js/platform/widgets.min.js";
+  script_location = "https://widgets.gameolith.com/js/platform/widgets.min.js";
 
   async_snippet = "<script>(function(a,b,c){var d=a.getElementsByTagName(b)[0],e=a.createElement(b);if(!a.getElementById(c)){e.async=true;e.id=c;e.src=\"" + script_location + "\";d.parentNode.insertBefore(e,d)}})(document,\"script\",\"gameolith-js\");</script>";
 
