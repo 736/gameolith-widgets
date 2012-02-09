@@ -388,7 +388,11 @@ Gameolith.init = function() {
     button.setAttribute("data-gameolith-object-id", "__gameolith_button_" + num);
     button.style.display = "none";
   }
-  Gameolith.tools.cssloader("https://widgets.gameolith.com/css/platform/style.min.css");
+  if (window._gmecssoverride === void 0) {
+    Gameolith.tools.cssloader("https://widgets.gameolith.com/css/platform/style.min.css");
+  } else {
+    Gameolith.tools.cssloader(window._gmecssoverride);
+  }
   window.addEventListener("message", Gameolith.messageRead, false);
   return demo_boxes.length + demo_buttons.length;
 };
