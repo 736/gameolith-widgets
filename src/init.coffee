@@ -106,7 +106,10 @@ Gameolith.init = ->
         button.style.display = "none"
     
     # Load the CSS for the overlay
-    Gameolith.tools.cssloader "https://widgets.gameolith.com/css/platform/style.min.css"
+    if window._gmecssoverride is undefined
+        Gameolith.tools.cssloader "https://widgets.gameolith.com/css/platform/style.min.css"
+    else
+        Gameolith.tools.cssloader window._gmecssoverride
 
     # Enable message passing
     window.addEventListener "message", Gameolith.messageRead, false
