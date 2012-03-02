@@ -3,7 +3,7 @@ Gameolith Widgets
 
 You can embed and link to game demos and individual games on Gameolith using this lightweight script. It's completely open source, and licenced under Apache 2.0.
 
-For a nice way to generate widget code, take a look at our brand spanking new website! http://736.github.com/gameolith-widgets/
+For a nice way to generate widget code, take a look at our brand spanking new website! https://widgets.gameolith.com/
 
 Browser Support
 ---------------
@@ -26,7 +26,7 @@ Include the widget JavaScript asynchronously, using the following snippet:
 	if (!d.getElementById(id)) {
 		s.async=true;
 		s.id=id;
-		s.src="http://736.github.com/gameolith-widgets/js/platform/widgets.min.js";
+		s.src="https://widgets.gameolith.com/js/platform/widgets.min.js";
 		h.parentNode.insertBefore(s, h);
 	}
 })(document, "script", "gameolith-js");
@@ -36,7 +36,7 @@ Include the widget JavaScript asynchronously, using the following snippet:
 Or by including it at the bottom of your page:
 
 ``` html
-<script src="http://736.github.com/gameolith-widgets/js/platform/widgets.min.js" id="gameolith-js"></script>
+<script src="https://widgets.gameolith.com/js/platform/widgets.min.js" id="gameolith-js"></script>
 ```
 
 Demo download button
